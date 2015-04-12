@@ -29,6 +29,44 @@
             </next>
           </block>
         </statement>
+        <next>
+          <block type="controls_if" id="75" inline="false">
+            <value name="IF0">
+              <block type="sensor_object" id="54">
+                <field name="OBJECT">LEFTFRONT</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="movement_right" id="117">
+                <next>
+                  <block type="robot_delay" id="119" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="135">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="movement_right" id="145">
+                        <next>
+                          <block type="robot_delay" id="147" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="154">
+                                <field name="NUM">2500</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="movement_stop" id="164"></block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
       </block>
     </statement>
   </block>
