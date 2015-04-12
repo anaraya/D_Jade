@@ -22,6 +22,9 @@
                     <field name="NUM">1000</field>
                   </block>
                 </value>
+                <next>
+                  <block type="movement_stop" id="47"></block>
+                </next>
               </block>
             </next>
           </block>
